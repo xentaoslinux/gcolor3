@@ -1,0 +1,21 @@
+Source: gcolor3
+Section: gnome
+Priority: extra
+Maintainer: Dindin Hernawan <dindin_hernawan@yahoo.com>
+Standards-Version: 3.9.3
+Homepage: https://www.hjdskes.nl/projects/gcolor3/
+Vcs-Browser: https://github.com/xentaoslinux/gcolor3.git
+Build-Depends: autoconf,
+               dh-autoreconf,
+               automake,
+               libltdl-dev,
+               libglib2.0-dev,
+               debhelper (>= 9),
+               gnome-common (>= 3.10),
+               libgtk-3-dev,
+
+Package: gcolor3
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: dpkg (>= 1.15.6)
+Description: Gcolor3 is a color selection dialog written in GTK3
